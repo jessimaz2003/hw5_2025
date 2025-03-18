@@ -1,0 +1,152 @@
+/*I apologize for the slightly unorganized format, I kept adding steps or trying different things to see if they would work based on the images provided but the order is a bit scrambled*/
+body{
+    font-family: "Poppins",Times, serif;
+    background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    
+}
+@keyframes logoGrow {
+    from {
+      width: 25px;
+      opacity: 0;
+    }
+    to {
+      width: 475px;
+      opacity: 1;
+    }
+  }
+
+header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav_links{
+    display:flex;
+    flex-direction: column;
+    text-align: center; 
+}
+
+
+a, a:visited {
+    color: black; 
+  }
+
+  .card > header {
+    background: #288088;
+    border: solid 2px #45ADAD;
+    padding: 20px 0;
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
+    width: 450px;
+}
+.card{
+    border-top-right-radius:50px;
+    border-top-left-radius:50px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+    
+}
+
+.card button{
+    margin-left: 0%;
+
+}
+
+
+.card{
+    flex: 0 0 450px;
+}
+
+.pricing{
+    width: 450px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+
+.about{
+    text-align: center;
+}
+
+
+
+div{
+    flex-direction: row;
+    width: 100%;
+
+}
+.gallery img{
+    border: solid 10px #50C7C7;
+    width: 250px; 
+    height: 200px;
+    
+
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 20px;
+  }
+footer{
+    width: 100%
+}
+
+#logo {
+    animation: logoGrow 5s forwards;
+  }
+
+@media (min-width: 900px) {
+    header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+
+  
+    .nav_links {
+        display:flex;
+        flex-direction: row;
+        margin-right: auto!important; /* Not sure why it won't let me push the links to the right side */
+        text-align: left!important;
+    }
+    .pricing {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        margin: 0 auto;
+
+
+      }
+      .card > header {
+        background: #288088;
+        border: solid 2px #45ADAD;
+        border-top-right-radius:50px;
+        border-top-left-radius:50px;
+        width: 100%;
+        justify-content: left;
+        align-items: left;
+    }
+      .card {
+        flex: 0 0 275px;
+        margin: 0px;
+      }
+      #logo{
+        margin-right: auto;
+
+      }
+      footer{
+        width: 100%
+    }
+    
+
+  }
